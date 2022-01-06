@@ -23,7 +23,7 @@ const HomePosition = (props) => {
     const pos = spaceApiState.location ? {lat: spaceApiState.location.lat, lon: spaceApiState.location.lon} : {lat: 0, lon: 0}
 
     return (
-        <PageBox title="Wo findest du uns?" className="bg-2">
+        <PageBox id="Ort" title="Wo findest du uns?" className="bg-2">
             <div className="row">
                 <div className="col-md-12 col-lg-4">
                     <p>Unsere Adresse lautet:<br /> {address}</p>

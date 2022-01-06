@@ -18,13 +18,13 @@ const Navigation = () => {
                   Home
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="homeDropdown">
-                  <li><a className="dropdown-item" href="#Mitmachen">Mitmachen</a></li>
-                  <li><a className="dropdown-item" href="#Ausstattung">Ausstattung</a></li>
-                  <li><a className="dropdown-item" href="#Ort">Ort</a></li>
+                  <li><a className="dropdown-item" href="/#Mitmachen">Mitmachen</a></li>
+                  <li><a className="dropdown-item" href="/#Ausstattung">Ausstattung</a></li>
+                  <li><a className="dropdown-item" href="/#Ort">Ort</a></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#Events">Termine</a>
+                <a className="nav-link" href="/#Events">Termine</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/faq">F &amp; A</a>

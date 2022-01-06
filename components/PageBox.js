@@ -9,7 +9,7 @@ export default class PageBox extends Component {
         const FirstContainer = this.props.firstContainer ? this.props.firstContainer : 'div';
 
         return (
-            <FirstContainer className={this.props.className}>
+            <FirstContainer {...this.props.id? {id: this.props.id} : {}} className={this.props.className}>
                 <div className={"container-xl text-center "}>
                     <div style={{ paddingTop: "4rem", paddingBottom: "4rem" }} className="row">
                         <div className="col-sm-12">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { useSpaceApiContext } from '../contexts/spaceapi-state'
 
@@ -14,6 +15,12 @@ import { Timeline } from 'react-twitter-widgets'
 import PageBox from '../components/PageBox.js';
 import HomeJumbo from '../components/HomeJumbo.js';
 import HomeEvents from '../components/HomeEvents.js';
+
+import picShop from "../public/pic/vspaceone_maschinenraum.jpg"
+import picPrusa from "../public/pic/vspaceone_prusa_mk3s_small.jpg"
+import picPsu from "../public/pic/vspaceone_big_psu_small.jpg"
+import picDrawers from "../public/pic/vspaceone_cap_drawers_small.jpg"
+import picWood from "../public/pic/vspaceone_holzundmetall.jpg"
 
 export default class Home extends Component {
 
@@ -42,7 +49,7 @@ export default class Home extends Component {
                     <p className="text-center"><Link href="/faq">Mehr Fragen zu uns und was wir machen beantworten wir hier!</Link></p>
                 </PageBox>
                 <HomeInfoBoxBanner />
-                <PageBox title="Mitmachen" className="bg-3">
+                <PageBox id="Mitmachen" title="Mitmachen" className="bg-3">
                     <div className="row">
                         <div className="col-sm-6">
                             <h3>Vorbeischauen</h3>
@@ -104,38 +111,37 @@ class HomeInfoBoxBanner extends Component {
     }
 
     render() {
-
+        
         const slideContent = [
             {
                 title: "Ausstattung",
                 text: "Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und ein Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.",
-                imageSrc: "pic/vspaceone_maschinenraum.jpg"
+                imageSrc: picShop
             },
             {
                 title: "3D Druck",
                 text: "Unser neuer Prusa i3 MK3s liefert dank zahlreicher Voreinstellungen und ausgeklügelter Features selbst nach kurzen Einweisungen in schnellster Zeit zu Ergebnissen die sich sehen lassen können.",
-                imageSrc: "pic/vspaceone_prusa_mk3s_small.jpg"
+                imageSrc: picPrusa
             },
             {
                 title: "Elektronik",
                 text: "Der Elektronikarbeitsplatz lädt zum Hacken ein. Stets zur Hand sind Lötkolben, Heißluftstation, Multimeter, Labornetzteile, digitales Oszilloskop sowie ein Haufen Zubehör und natürlich Kabel.",
-                imageSrc: "pic/vspaceone_big_psu_small.jpg"
+                imageSrc: picPsu
             },
             {
                 title: "Reparatur",
                 text: "Eine Wand voll mit sortierten Elektronikkomponenten bietet die Qual der Wahl von üblicherweise benötigen Bauteile wie Widerstände oder Kondensatoren.",
-                imageSrc: "pic/vspaceone_drawer_wall_small.jpg"
+                imageSrc: picDrawers
             },
             {
                 title: "Holz und Metall",
                 text: "Unsere noch nicht allzu große, aber ständig wachsende, Ausstattung an Werkzeug und Maschinen steht jederzeit für große und kleine Projekte in unseren Räumen bereit.",
-                imageSrc: "pic/vspaceone_holzundmetall.jpg"
+                imageSrc: picWood
             }
         ]
 
         const topContainerStyle = {
             marginTop: "0px",
-            //marginBottom: "-80px",
             paddingTop: "40px",
             maxHeight: "100vh",
             minHeight: "70vh",
@@ -155,7 +161,7 @@ class HomeInfoBoxBanner extends Component {
                         infinite={true}
                     >
                         <DotGroup />
-                        <Slider style={{ minHeight: "70vh", maxHeight: "100vh" }}>
+                        <Slider>
                             <>
                                 {slideContent.map((content, idx) => (
                                     <Slide key={idx} index={idx}>
@@ -179,7 +185,7 @@ class HomeInfoBoxBanner extends Component {
 function HomeInfoBoxBannerSlide(props) {
 
     const rowTextClasses = "col-xs-10 offset-xs-1 col-sm-8 offset-sm-2"
-
+//<div style={ zIndex: "1", overflow: "hidden", backgroundSize: "cover", objectFit: "contain", backgroundPosition: "center", backgroundImage: `url(${props.imageSrc})`, height: "100%", maxHeight: "100vh" }}></div>
     return (
         <>
             <div className="row">
@@ -189,7 +195,7 @@ function HomeInfoBoxBannerSlide(props) {
                 </div>
             </div>
 
-            <div style={{ zIndex: "1", overflow: "hidden", backgroundSize: "cover", objectFit: "contain", backgroundPosition: "center", backgroundImage: `url(${props.imageSrc})`, height: "100%", maxHeight: "100vh" }}></div>
+            <Image style={{ overflow: "hidden" }} layout="responsive" src={props.imageSrc}></Image>
         </>
     )
 }
@@ -213,9 +219,9 @@ const HomeState = () => {
 
     return (
         <PageBox className={classes}>
-            <h2 >Raumstatus</h2>
+            <h2 style={{color: "#ffffff"}} >Raumstatus</h2>
             <br />
-            <h3 id="stateText">{text}</h3>
+            <h3 id="stateText" style={{color: "#ffffff"}}>{text}</h3>
         </PageBox>
     );
 }

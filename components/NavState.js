@@ -19,7 +19,7 @@ const NavState = () => {
 
     return (
         <span id="doorstate" className={classNamees}>
-            <a className="nav-link" href="#state" id="doorstateString">{stateText}</a>
+            <a className="nav-link" href="#state" id="doorstateString" style={{color: "#ffffff"}}>{stateText}</a>
         </span>
     );
 }

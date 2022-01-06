@@ -193,8 +193,8 @@ class HomeEvents extends Component {
         }
 
         return (
-            <PageBox title="Events" className="bg-2">
-                <h4 className="margin"><a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">Ganzer Kalender</a></h4>
+            <PageBox id="Events" title="Events" className="bg-2">
+                <h3 className="margin"><a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">Ganzer Kalender</a></h3>
                 <div id="events">
                     { events }
                 </div>

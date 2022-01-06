@@ -12,8 +12,11 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="de">
         <Head>
+            <title>vspace.one - Makerspace, Hackerspace, Chaostreff und offene Werkstatt für Villingen-Schwenningen und Umgebung</title>
+            <meta name="description" content="Makerspace, Hackerspace, Chaostreff und offene Werkstatt für Villingen-Schwenningen und Umgebung. Basteln, tüfteln, hacken und Wissen austauschen." />
+            <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link
                 href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet"
