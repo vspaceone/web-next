@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
+  experimental: {
+    outputStandalone: true // For this we need >= "next": "12.0.8-canary.8"
+  },
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4. 
       // Looks like backward compatibility approach.

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
-//import Particles from 'react-particles-js';
+
+import Particles from 'react-tsparticles';
 import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -82,14 +83,9 @@ class HomeJumbo extends Component {
                     </div>
                 </CarouselProvider>
                 <Particles 
+                  canvasClassName="particlesCanvas"
                     height={boxHeight}
                     params={particleConfig}
-                    style={{
-                        zIndex: 5,
-                        position: "absolute",
-                        top: 0,
-                        left: 0
-                    }}
                 />
                 <div 
                     id="particles-overlay"
@@ -224,12 +220,4 @@ var particleConfig = {
     }
   },
   "retina_detect": true
-}
-
-class Particles extends Component {
-  render(){
-    return (
-      <span>No Particles</span>
-    )
-  }
 }

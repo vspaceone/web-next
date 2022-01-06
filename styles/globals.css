@@ -164,3 +164,12 @@ flex: 1 !important;
 }
 
 #map { height: 180px; }
+
+/* Overrides for homepage canvas */
+
+.particlesCanvas {
+  z-index: 5 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}

@@ -4,7 +4,7 @@ import PageBox from '../components/PageBox.js'
 
 //import ReactPiwik from 'react-piwik';
 
-//import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 
 class FAQ extends Component {
 
@@ -24,7 +24,11 @@ class FAQ extends Component {
             height: "200px"
           }}
         >
-          <Particles height="200px" params={particleConfig} />
+          <Particles 
+            canvasClassName="particlesCanvas"
+              height="200ps"
+              params={particleConfig}
+          />
           <div
             id="particles-overlay"
             style={{
@@ -243,12 +247,4 @@ var particleConfig = {
     }
   },
   "retina_detect": true
-}
-
-class Particles extends Component {
-  render() {
-    return (
-      <span>No Particles</span>
-    )
-  }
 }
