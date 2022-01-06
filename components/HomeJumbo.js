@@ -5,13 +5,6 @@ import Particles from 'react-tsparticles';
 import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import picPrusa from "../public/pic/vspaceone_prusa_mk3s_small.jpg"
-import picAdder from "../public/pic/vspaceone_4bit_adder_small.jpg"
-import picMotors from "../public/pic/vspaceone_motoren_small.jpg"
-import picDrawers from "../public/pic/vspaceone_cap_drawers_small.jpg"
-import picPsu from "../public/pic/vspaceone_big_psu_small.jpg"
-import picScope from "../public/pic/vspaceone_scope_small.jpg"
-
 class HomeJumbo extends Component {
 
   constructor(props) {
@@ -49,12 +42,12 @@ class HomeJumbo extends Component {
     }
 
     const images = [
-      picPrusa,
-      picAdder,
-      picMotors,
-      picDrawers,
-      picPsu,
-      picScope
+      "/pic/vspaceone_prusa_mk3s_small.jpg",
+      "/pic/vspaceone_4bit_adder_small.jpg",
+      "/pic/vspaceone_motoren_small.jpg",
+      "/pic/vspaceone_cap_drawers_small.jpg",
+      "/pic/vspaceone_big_psu_small.jpg",
+      "/pic/vspaceone_scope_small.jpg"
     ]
 
 //<div style={ zIndex: "1", overflow: "hidden", backgroundSize: "cover", objectFit: "contain", backgroundPosition: "center", backgroundImage: `url(${image})`, height: boxHeight }}></div>

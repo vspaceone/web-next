@@ -16,12 +16,6 @@ import PageBox from '../components/PageBox.js';
 import HomeJumbo from '../components/HomeJumbo.js';
 import HomeEvents from '../components/HomeEvents.js';
 
-import picShop from "../public/pic/vspaceone_maschinenraum.jpg"
-import picPrusa from "../public/pic/vspaceone_prusa_mk3s_small.jpg"
-import picPsu from "../public/pic/vspaceone_big_psu_small.jpg"
-import picDrawers from "../public/pic/vspaceone_cap_drawers_small.jpg"
-import picWood from "../public/pic/vspaceone_holzundmetall.jpg"
-
 export default class Home extends Component {
 
     componentDidMount() {
@@ -116,27 +110,27 @@ class HomeInfoBoxBanner extends Component {
             {
                 title: "Ausstattung",
                 text: "Wir haben zwei moderne Räume. In der Brücke stehen bequeme Sofas, ein Beamer und ein Kühlschrank. Im Maschinenraum, kann an Projekten gearbeitet werden.",
-                imageSrc: picShop
+                imageSrc: "/pic/vspaceone_maschinenraum.jpg"
             },
             {
                 title: "3D Druck",
                 text: "Unser neuer Prusa i3 MK3s liefert dank zahlreicher Voreinstellungen und ausgeklügelter Features selbst nach kurzen Einweisungen in schnellster Zeit zu Ergebnissen die sich sehen lassen können.",
-                imageSrc: picPrusa
+                imageSrc: "/pic/vspaceone_prusa_mk3s_small.jpg"
             },
             {
                 title: "Elektronik",
                 text: "Der Elektronikarbeitsplatz lädt zum Hacken ein. Stets zur Hand sind Lötkolben, Heißluftstation, Multimeter, Labornetzteile, digitales Oszilloskop sowie ein Haufen Zubehör und natürlich Kabel.",
-                imageSrc: picPsu
+                imageSrc: "/pic/vspaceone_big_psu_small.jpg"
             },
             {
                 title: "Reparatur",
                 text: "Eine Wand voll mit sortierten Elektronikkomponenten bietet die Qual der Wahl von üblicherweise benötigen Bauteile wie Widerstände oder Kondensatoren.",
-                imageSrc: picDrawers
+                imageSrc: "/pic/vspaceone_cap_drawers_small.jpg"
             },
             {
                 title: "Holz und Metall",
                 text: "Unsere noch nicht allzu große, aber ständig wachsende, Ausstattung an Werkzeug und Maschinen steht jederzeit für große und kleine Projekte in unseren Räumen bereit.",
-                imageSrc: picWood
+                imageSrc: "/pic/vspaceone_holzundmetall.jpg"
             }
         ]
 
