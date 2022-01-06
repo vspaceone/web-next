@@ -1,4 +1,4 @@
-[![Build Status](https://jenkins.vspace.one/buildStatus/icon?job=vspaceone%2Fweb-next%2Fmaster)](https://jenkins.vspace.one/job/vspaceone/job/web-next/job/master/)
+[![Build Status](https://jenkins.vspace.one/buildStatus/icon?job=vspaceone%2Fweb-next%2Fmain)](https://jenkins.vspace.one/job/vspaceone/job/web-next/job/main/)
 
 # vspace.one website 3.0
 This repo holds the code for the new vspace.one website written in React and NextJS.
