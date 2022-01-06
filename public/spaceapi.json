@@ -1,0 +1,51 @@
+{
+    "api": "0.13",
+    "space": "vspace.one",
+    "logo": "https://vspace.one/pic/logo_vspaceone.svg",
+    "url": "https://vspace.one",
+    "location": {
+        "address": "Wilhelm-Binder-Str. 19, 78048 VS-Villingen, Germany",
+        "lat": 48.065002,
+        "lon": 8.456495
+    },
+    "contact": {
+        "phone": "+4977219463980",
+        "twitter": "@vspace.one",
+        "email": "info@vspace.one"
+    },
+    "issue_report_channels": null,
+    "state": {
+        "open": false,
+        "lastchange": 1552066170
+    },
+    "sensors": {
+        "temperature": [
+            {
+                "value": 25,
+                "unit": "°C",
+                "location": "Maschinenraum",
+                "ext_changed": 1517754654
+            },
+            {
+                "value": 22,
+                "unit": "°C",
+                "location": "Brücke",
+                "ext_changed": 1517754742
+            }
+        ],
+        "humidity": [
+            {
+                "value": 50,
+                "unit": "%",
+                "location": "Brücke",
+                "ext_changed": 1517754826
+            },
+            {
+                "value": 40,
+                "unit": "%",
+                "location": "Maschinenraum",
+                "ext_changed": 1517754840
+            }
+        ]
+    }
+}

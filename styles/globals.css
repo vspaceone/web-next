@@ -1,0 +1,166 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f8f8f8;
+  /* White */
+  color: #555555;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* From old page */
+.bg-1 {
+  background-color: #08A059;
+  /* Green */
+  color: #ffffff;
+}
+
+.bg-1 > * > a {
+  color: #cfcfcf;
+}
+
+.bg-2 {
+  background-color: #474e5d;
+  /* Dark Blue */
+  color: #ffffff;
+}
+
+.bg-3 {
+  background-color: #f8f8f8;
+  /* White */
+  color: #555555;
+}
+
+.bg-4 {
+  background-color: #2f2f2f;
+  /* Black Gray */
+  color: #fff;
+}
+
+nav {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.no-side-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.faw-link {
+  padding: 0px !important;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 25px;
+}
+
+#events {
+
+}
+
+.event {
+margin: auto;
+text-align: left;
+margin-bottom: 20px;
+}
+
+.event_titleline {
+display: block;
+}
+
+.event_title {
+font-size: 1.6em;
+padding-right: 5px;
+}
+
+.event_day {
+padding-top: 0em;
+display: block;
+font-size: 6em;
+}
+
+.event_time {
+}
+
+.event_month {
+font-size: 2.2em;
+display: block;
+line-height: 0.1em
+}
+
+.event_date {
+/*width: 13em;*/
+/*float: right;*/
+background-color: #08A059;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 0px;
+margin-bottom: 0px;
+height: 13em;
+}
+
+.event_details {
+/*float: left;*/
+background-color: white;
+color: black;
+padding: 1em;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 0px;
+margin-bottom: 0px;
+height: 13em;
+overflow: scroll;
+
+}
+.event_price {
+/*display: block;*/
+}
+
+.event_icons {
+top: 1em;
+right: 2em;
+position: absolute;
+}
+
+.event_desc {
+/*display: block;
+float: left;
+text-align: left;*/
+}
+
+.event_download {
+/*display: block;*/
+}
+
+
+footer > p > a {
+color: #ffffff;
+}
+
+footer {
+margin: 0 !important;
+}
+
+/* Sticky footer */
+
+.site {
+display: flex !important;
+min-height: 100vh !important;
+flex-direction: column !important;
+}
+
+.site-content {
+flex: 1 !important;
+}
+
+#map { height: 180px; }

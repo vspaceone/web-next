@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment version="3.0">
+  <caption>LAN cable</caption>
+  <note>LAN cable</note>
+  <place/>
+  <categories>
+    <category value="Cable"/>
+    <category value="Computer"/>
+    <category value="adsl"/>
+    <category value="blue"/>
+    <category value="broadband"/>
+    <category value="business"/>
+    <category value="communication"/>
+    <category value="computercable"/>
+    <category value="computing"/>
+    <category value="connect"/>
+    <category value="connection"/>
+    <category value="connectivity"/>
+    <category value="connector"/>
+    <category value="data"/>
+    <category value="digital"/>
+    <category value="dsl"/>
+    <category value="electric"/>
+    <category value="electronic"/>
+    <category value="equipment"/>
+    <category value="ethernet"/>
+    <category value="interconnect"/>
+    <category value="internet"/>
+    <category value="lan"/>
+    <category value="line"/>
+    <category value="link"/>
+    <category value="macro"/>
+    <category value="net"/>
+    <category value="network"/>
+    <category value="networkconnectionplug"/>
+    <category value="networking"/>
+    <category value="patch"/>
+    <category value="plug"/>
+    <category value="technology"/>
+    <category value="telecommunication"/>
+    <category value="w-lan"/>
+    <category value="white"/>
+    <category value="wire"/>
+    <category value="wired"/>
+  </categories>
+</comment>
