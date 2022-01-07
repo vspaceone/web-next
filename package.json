@@ -19,7 +19,8 @@
     "react-leaflet": "^3.2.2",
     "react-moment": "^1.1.1",
     "react-tsparticles": "^1.38.0",
-    "react-twitter-widgets": "^1.10.0"
+    "react-twitter-widgets": "^1.10.0",
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "eslint": "8.6.0",
